@@ -19,7 +19,7 @@ public class Hello implements Function<String, String> {
 
     @Override
     public String apply(String message) {
-        return messageService.getMessage(message);
+        return messageService.getMessagess(message);
     }
 }
 

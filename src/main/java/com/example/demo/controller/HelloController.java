@@ -12,20 +12,20 @@ import java.util.Optional;
 @RequestMapping("")
 public class HelloController {
 
-    private final MessageService messageService;
+    private final MessageService messagessService;
 
     @Autowired
-    public HelloController(MessageService messageService) {
-        this.messageService = messageService;
+    public HelloController(MessageService messagessService) {
+        this.messagessService = messagessService;
     }
 
     @PostMapping("/")
     public String sayHello(@RequestBody Optional<String> request) {
         final String message;
         if(request.isPresent()){
-            message = messageService.getMessage(request.get());
+            message = messagessService.getMessagess(request.get());
         }else{
-            message = messageService.getMessage("Default Message");
+            message = messagessService.getMessagess("Default Message");
         }
         
         return message;

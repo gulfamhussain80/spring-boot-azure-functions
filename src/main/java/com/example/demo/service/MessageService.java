@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class MessageService {
 
     
-    public String getMessage(String msg) {
-        return "Here is your message: " + msg.toUpperCase();
+    public String getMessagess(String msg) {
+        return "Here is your message new temp message tetsing: " + msg.toUpperCase();
     }
 }
